@@ -5,11 +5,25 @@ body {
 
 label {
     display: block;
-    margin-bottom: 5px;
+    margin: 5px 5px;
 }
 
 input, select, button {
     margin-bottom: 10px;
+    border-radius: 8px;
+    background-color: white;
+    color: black;
+    border: 2px solid #000000;
+}
+
+button {
+    transition-duration: .4s;
+    margin-right: 15px;
+}
+
+button:hover{
+    background-color: #000000; /* Green */
+    color: white;
 }
 
 textarea {
