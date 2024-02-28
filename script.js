@@ -26,7 +26,7 @@ function gerarSenha() {
     // Adicionar números se permitido
     chars += permitirNumeros ? pegarCaractereAleatorio(numeros) : '';
     // Adicionar letras maiúsculas se permitido
-    chars += permitirMaiuscula ? pegarCaracteerAleatorio(letrasMaiusculas) : '';
+    chars += permitirMaiuscula ? pegarCaractereAleatorio(letrasMaiusculas) : '';
 
     // Preencher o restante da senha com caracteres aleatórios
     while (chars.length < comprimento) {
