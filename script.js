@@ -22,15 +22,15 @@ function gerarSenha() {
     for (let i = 0; i < numSenhas; i++) {
     let chars = '';
     // Adicionar caracteres especiais se permitido
-    chars += permitirEspecial ? pegarCaracterAleatorio(CharsEspeciais) : '';
+    chars += permitirEspecial ? pegarCaractereAleatorio(CharsEspeciais) : '';
     // Adicionar números se permitido
-    chars += permitirNumeros ? pegarCaracterAleatorio(numeros) : '';
+    chars += permitirNumeros ? pegarCaractereAleatorio(numeros) : '';
     // Adicionar letras maiúsculas se permitido
-    chars += permitirMaiuscula ? pegarCaracterAleatorio(letrasMaiusculas) : '';
+    chars += permitirMaiuscula ? pegarCaracteerAleatorio(letrasMaiusculas) : '';
 
     // Preencher o restante da senha com caracteres aleatórios
     while (chars.length < comprimento) {
-        chars += pegarCaracterAleatorio("abcdefghijklmnopqrstuvwxyz");
+        chars += pegarCaractereAleatorio("abcdefghijklmnopqrstuvwxyz");
     }
 
     // Embaralhar os caracteres
@@ -43,7 +43,7 @@ function gerarSenha() {
     document.getElementById('senhasGeradas').value = senhas;
 }
 
-function pegarCaracterAleatorio(caracteres) {
+function pegarCaractereAleatorio(caracteres) {
     // Obter um caractere aleatório da string fornecida
     return caracteres[Math.floor(Math.random() * caracteres.length)];
 }
